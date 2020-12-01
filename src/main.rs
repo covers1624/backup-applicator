@@ -30,7 +30,7 @@ fn main() {
             Arg::new("verbose")
                 .short('v')
                 .long("verbose")
-                .multiple(true)
+                .multiple_occurrences(true)
                 .about("Enables verbose logging, can be provided multiple times for increasingly verbose logging.")
         )
         .get_matches();
